@@ -106,7 +106,7 @@ function myFunctionTest(expected, found) {
 
   
 /* ---------------------- From JsFiddle--------------*/
-document.writeln("Results from JS Fiddle");
+document.writeln("Results from JS Fiddle"+ "<br/>");
 const a = [1,3,5,3,3]; 
 
 const multiplyby3 = a.map(function(elem, i, array){
