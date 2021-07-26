@@ -1,18 +1,4 @@
 
-/* var startButton = document.getElementById("start");
-startButton.onclick = start ;
-function start(){
-    var select = document.getElementById('animation')
-    
-    var value = select.options[select.selectedIndex].value;
-    var whichOne = "Juggler";
-    
-    if(value =="Juggler"){
-        $("text-area").value = ANIMATIONS[whichOne];
-    }
-
-} */
-
 let state={
     isAnimating:false,
     animation:[],
@@ -64,9 +50,6 @@ window.onload=function(){
             element.disabled=false;
         });
     }
-    // animation.onchange=()=>{
-    //     textArea.value=ANIMATIONS[animation.value];
-    // }
     animation.onchange =()=>{
         textArea.value = ANIMATIONS[animation.value];
     }
