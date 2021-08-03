@@ -1,3 +1,5 @@
+mocha.setup("bdd");
+let assert = chai.assert;
 describe("Account" ,function(){
     it("a new account must have zero balance", function(){
         assert.equal(new Account("1122").getBalance(),0.0);
@@ -89,3 +91,6 @@ describe("end of month",function(){
         assert.equal(true,acc.endOfMonth().startsWith("Warning"));
     })
 });
+window.onload = function(){
+    mocha.run();
+}
